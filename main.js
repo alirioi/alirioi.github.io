@@ -21,8 +21,6 @@ let xAnterior = 0, yAnterior = 0, xActual = 0, yActual = 0;
 const obtenerXReal = (clientX) => clientX - cuadro.getBoundingClientRect().left;
 const obtenerYReal = (clientY) => clientY - cuadro.getBoundingClientRect().top;
 
-
-
 botonLimpiar.addEventListener("click", limpiarCanvas);
 botonBorrar.addEventListener("click", borrador);
 dibujarLinea(colorcito, 3,x-1,y-1,x+1,y+1,papel);
