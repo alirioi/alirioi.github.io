@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con flechas</title>
+  </head>
+  <body>
+    <center>
+      <h1> Dibujando en Canvas</h1>
+      <canvas style="border: 2px solid black" id="area_de_dibujo" width="600" height="600"></canvas>
+      <div>
+        Puedes dibujar con las flechas del teclado o con el ratón. <br>
+        <input type="button" value="Limpiar" id ="reset"/>
+        <input type="button" value="Borrador" id="borrador">
+        Color: <input type="color" id="colorId"/>
+        Grosor: <input type="range" id="grosorId" min="1" max="20" value="3"/>
+      </div>
+      <script src="eventos.js" type="text/javascript"></script>
+    </center>
+  </body>
+</html>
