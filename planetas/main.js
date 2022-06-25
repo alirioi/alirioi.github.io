@@ -16,9 +16,7 @@ const guardarDatos = () =>
 {
   let peso = parseInt(document.getElementById("textoPeso").value);
   let planeta = parseInt(document.getElementById("planetaId").value);
-  console.log(peso);
-
-
+  
   switch (planeta)
   {
     case 1:
@@ -67,11 +65,21 @@ const guardarDatos = () =>
     break;
 
     default:
-    document.getElementById("resultadoPeso").innerHTML="<center><strong><br><br>¡ERROR!</strong> elija una opcion valida. </center>";
+
+    break;
   }
 
 
 peso_final = parseFloat(peso_final).toFixed(2);
 
-document.getElementById("resultadoPeso").innerHTML="<center>Tu <b>peso</b> en <strong> " + nombre + "</strong> es: <b>"+ peso_final + " kg.</b></b></center>";
+if(planeta > 9 || planeta < 1)
+{
+    document.getElementById("resultadoPeso").innerHTML="<center><strong>¡ERROR!</strong> elija una opcion valida. </center>";
+}
+else
+{
+    document.getElementById("resultadoPeso").innerHTML="<center>Tu <b>peso</b> en <strong> " + nombre + "</strong> es: <b>"+ peso_final + " kg.</b></b></center>";
+}
+
+
 }
