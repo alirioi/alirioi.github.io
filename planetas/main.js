@@ -67,7 +67,7 @@ const guardarDatos = () =>
     break;
 
     default:
-    document.write("<center><strong><br><br>¡ERROR!</strong> Presione <strong>F5</strong> y elija una opcion valida. </center>");
+    document.getElementById("resultadoPeso").innerHTML="<center><strong><br><br>¡ERROR!</strong> elija una opcion valida. </center>";
   }
 
 
