@@ -15,7 +15,13 @@ div
   border-color: yellow;
   border-width: 5px;
   border-style: solid;
-  margin-left: 710px;
-  margin-right: 710px;
+  height: 265px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: -100px;
+
+
 
 }
