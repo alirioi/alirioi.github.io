@@ -42,6 +42,7 @@ function dibujarTeclado(evento)
 
 
   var movimiento = 10;
+  
   switch (evento.keyCode)
   {
     case teclas.UP:
@@ -65,7 +66,7 @@ function dibujarTeclado(evento)
     break;
 
     default:
-  }
+  }  
 }
 
 function dibujarRaton(evento)
@@ -78,7 +79,6 @@ function dibujarRaton(evento)
   if(evento.buttons == 1)
   {
     dibujarLinea(colorcito.value, grosor.value,xAnterior, yAnterior , xActual, yActual, papel);
-    console.log(grosor.value);
   }
 }
 

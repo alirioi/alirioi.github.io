@@ -1,4 +1,10 @@
 body
 {
   font-family: Helvetica;
+  color: yellow;
+  background: #181928;
+}
+canvas
+{
+	background: #FFFFFF
 }
