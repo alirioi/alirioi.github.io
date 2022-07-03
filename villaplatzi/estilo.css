@@ -1,0 +1,12 @@
+body
+{
+    font-family: Helvetica;
+    text-align: center;
+}
+canvas 
+{
+    paddingt: 0;
+    margin: auto;
+    display: block;
+    width: 500px;
+}
