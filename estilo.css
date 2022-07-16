@@ -1,6 +1,6 @@
 body
 {
-  background: #181928;
+  background: rgb(24, 25, 40);
   color: white;
   font-family: Helvetica;
   font-size: 25px;
@@ -8,4 +8,43 @@ body
 strong
 {
   color: yellow;
+}
+
+#contenedor_carga
+{
+  background-color: rgba(24, 25, 40, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+ 
+  z-index: 10000;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, .1);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border-top-color: yellow;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0%
+  {
+    transform: rotate(0seg);
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+  }
 }
